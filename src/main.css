@@ -87,13 +87,10 @@ main {
 
 #getData {
     color: hsl(0, 25%, 24%);
-    background-color: hsl(258, 87%, 63%);
-    height: 20px;
-    width: 100px;
-    margin: 5% 10%;
+    background-color: hsl(258, 87%, 63%);    
+    margin: 5% 6%;
     border-radius: 5px;
-    align-content: center;
-    justify-content: center;
+    padding: 1em 1em;    
 }
 
 #getData:hover {
