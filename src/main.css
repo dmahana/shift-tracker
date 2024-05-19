@@ -74,27 +74,23 @@ main {
 
 .addItem input {
     border-radius: 5px;
-    padding: 1em 1em;
-    margin: 4% 4%;
+    padding: 1em 1em;    
 }
 
 .addItem button {
     padding: 1em 1em;
     background-color: hsla(120, 93%, 44%, 0.836);
-    border-radius: 5px;
-    margin: 4% 4%;
+    border-radius: 5px;    
 }
 
 #addItemResult{
     align-self: center;
-    padding: 1em 1em;
-    margin: 4% 4%;
+    padding: 1em 1em;    
 }
 
 #getData {
     color: hsl(0, 25%, 24%);
-    background-color: hsl(258, 87%, 63%);    
-    margin: 5% 6%;
+    background-color: hsl(258, 87%, 63%);        
     border-radius: 5px;
     padding: 1em 1em;    
 }
