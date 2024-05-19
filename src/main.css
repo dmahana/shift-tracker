@@ -49,33 +49,6 @@ header {
     color: hsl(27, 89%, 68%);
 }
 
-.log {
-    display: flex;
-    justify-content: space-around;
-    margin: 1%;
-}
-
-.log input {
-    padding: 2% 3%;
-    border-radius: 5px;
-    margin: 5%;
-}
-
-.btnlog {
-    color: hsl(0, 25%, 24%);
-    margin-right: 1rem;
-    background-color: hsl(258, 87%, 63%);
-    border-radius: 15%;
-    padding: 1em;
-    margin: 5px;
-}
-
-.btnlog:hover {
-    cursor: pointer;
-    color: hsl(0, 25%, 54%);
-    background-color: hsl(258, 87%, 83%);
-}
-
 main {
     display: flex;
     height: 84%;
