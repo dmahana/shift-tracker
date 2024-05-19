@@ -4,26 +4,27 @@ const supbaseUrl = "https://vnkmsolriwnyfumugehk.supabase.co";
 const supabaseApiKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZua21zb2xyaXdueWZ1bXVnZWhrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTYwMTkwNzAsImV4cCI6MjAzMTU5NTA3MH0.9CV9KEzuGaWs6yQ44M8HkhVMMjJCmPa0YY_gK3cLV8A";
 const supabaseClient = supabase.createClient(supbaseUrl, supabaseApiKey);
 
-function getValidKeys() {
+async function getValidKeys() {
     let result = []
-    const { data, error } = supabaseClient.from('userkeys').select();
+    const { data, error } = await supabaseClient.from('userkeys').select();
 
     if (error) {
-        return result.append("mahana");
+        return result.push("mahana");
     }
     for (let i = 0; i < data.length; i++) {
         _element = data[i];
-        result.append(_element.user_key);
+        result.push(_element.user_key);
     }
 
     return result;
 }
 
-const validKeys = getValidKeys();
+
 
 let one_hour = 1000 * 60 * 60;
 
 async function addSupabaseItem() {
+    const validKeys = await getValidKeys();
     let addItemResultElement = document.getElementById("addItemResult");
     let keyElement = document.getElementById("key");
 

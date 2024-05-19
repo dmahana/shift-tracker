@@ -85,6 +85,12 @@ main {
     margin: 4% 4%;
 }
 
+#addItemResult{
+    align-self: center;
+    padding: 1em 1em;
+    margin: 4% 4%;
+}
+
 #getData {
     color: hsl(0, 25%, 24%);
     background-color: hsl(258, 87%, 63%);    
