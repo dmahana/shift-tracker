@@ -1,7 +1,7 @@
 const mainContainer = document.getElementById("maincontainer");
 
-const supbaseUrl = process.env.SUPABASE_URL;
-const supabaseApiKey = process.env.SUPABASE_API_KEY;
+const supbaseUrl = "https://vnkmsolriwnyfumugehk.supabase.co";
+const supabaseApiKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZua21zb2xyaXdueWZ1bXVnZWhrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTYwMTkwNzAsImV4cCI6MjAzMTU5NTA3MH0.9CV9KEzuGaWs6yQ44M8HkhVMMjJCmPa0YY_gK3cLV8A";
 const supabaseClient = supabase.createClient(supbaseUrl, supabaseApiKey);
 
 async function fnLogin() {
