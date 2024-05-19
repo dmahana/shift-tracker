@@ -60,39 +60,45 @@ main {
     width: 100%;
     background-color: hsl(180, 60%, 67%);
     border-radius: 5px;
-    padding: 1em 1em;    
+    padding: 1em 1em;
     justify-content: center;
     flex-direction: column;
 }
 
-.addItem {    
+.addItem {
     width: 95%;
     margin: 2% 2%;
     display: flex;
     justify-content: space-around;
 }
 
+@media screen and (max-width: 500px) {
+    .addItem {
+        flex-direction: column;
+    }
+}
+
 .addItem input {
     border-radius: 5px;
-    padding: 1em 1em;    
+    padding: 1em 1em;
 }
 
 .addItem button {
     padding: 1em 1em;
     background-color: hsla(120, 93%, 44%, 0.836);
-    border-radius: 5px;    
+    border-radius: 5px;
 }
 
-#addItemResult{
+#addItemResult {
     align-self: center;
-    padding: 1em 1em;    
+    padding: 1em 1em;
 }
 
 #getData {
     color: hsl(0, 25%, 24%);
-    background-color: hsl(258, 87%, 63%);        
+    background-color: hsl(258, 87%, 63%);
     border-radius: 5px;
-    padding: 1em 1em;    
+    padding: 1em 1em;
 }
 
 #getData:hover {
