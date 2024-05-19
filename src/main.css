@@ -14,7 +14,7 @@ body {
 header {
     padding: 1px;
     margin: 0px;
-    height: 10%;
+    height: 10vh;
 }
 
 .navbar {
@@ -47,33 +47,6 @@ header {
 .logo a:hover {
     cursor: pointer;
     color: hsl(27, 89%, 68%);
-}
-
-.log {
-    display: flex;
-    justify-content: space-around;
-    margin: 1%;
-}
-
-.log input {
-    padding: 2% 3%;
-    border-radius: 5px;
-    margin: 5%;
-}
-
-.btnlog {
-    color: hsl(0, 25%, 24%);
-    margin-right: 1rem;
-    background-color: hsl(258, 87%, 63%);
-    border-radius: 15%;
-    padding: 1em;
-    margin: 5px;
-}
-
-.btnlog:hover {
-    cursor: pointer;
-    color: hsl(0, 25%, 54%);
-    background-color: hsl(258, 87%, 83%);
 }
 
 main {
@@ -109,17 +82,21 @@ main {
     padding: 1em 1em;
     background-color: hsla(120, 93%, 44%, 0.836);
     border-radius: 5px;
+    margin: 4% 4%;
+}
+
+#addItemResult{
+    align-self: center;
+    padding: 1em 1em;
+    margin: 4% 4%;
 }
 
 #getData {
     color: hsl(0, 25%, 24%);
-    background-color: hsl(258, 87%, 63%);
-    height: 20px;
-    width: 100px;
-    margin: 5% 10%;
+    background-color: hsl(258, 87%, 63%);    
+    margin: 5% 6%;
     border-radius: 5px;
-    align-content: center;
-    justify-content: center;
+    padding: 1em 1em;    
 }
 
 #getData:hover {
@@ -135,6 +112,7 @@ main {
     margin-top: auto;
     padding: 1em 1em;
     border-radius: 5px;
+    position: sticky;
 }
 
 .footcontainer {
