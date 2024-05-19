@@ -1,5 +1,7 @@
 const mainContainer = document.getElementById("maincontainer");
 
+const supbaseUrl = process.env.SUPABASE_URL;
+const supabaseApiKey = process.env.SUPABASE_API_KEY;
 const supabaseClient = supabase.createClient(supbaseUrl, supabaseApiKey);
 
 async function fnLogin() {
