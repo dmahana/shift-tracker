@@ -52,13 +52,13 @@ header {
 .log {
     display: flex;
     justify-content: space-around;
-    margin: 10px;
+    margin: 1%;
 }
 
 .log input {
-    padding: 2px 3px;
+    padding: 2% 3%;
     border-radius: 5px;
-    margin: 5px;
+    margin: 5%;
 }
 
 .btnlog {
@@ -87,8 +87,7 @@ main {
     width: 100%;
     background-color: hsl(180, 60%, 67%);
     border-radius: 5px;
-    padding: 1em 1em;
-    display: none;
+    padding: 1em 1em;    
     justify-content: center;
     flex-direction: column;
 }
@@ -103,7 +102,7 @@ main {
 .addItem input {
     border-radius: 5px;
     padding: 1em 1em;
-    margin: 4px 4px;
+    margin: 4% 4%;
 }
 
 .addItem button {
@@ -117,7 +116,7 @@ main {
     background-color: hsl(258, 87%, 63%);
     height: 20px;
     width: 100px;
-    margin: 5px 10px;    
+    margin: 5% 10%;
     border-radius: 5px;
     align-content: center;
     justify-content: center;
@@ -128,34 +127,6 @@ main {
     color: hsl(0, 25%, 54%);
     background-color: hsl(258, 87%, 83%);
 }
-
-#updateData {
-    /* display: none; */
-    color: hsl(0, 25%, 24%);
-    background-color: hsl(258, 87%, 63%);
-    height: 20px;
-    width: 100px;
-    margin: 5px 10px;    
-    border-radius: 5px;
-    align-content: center;
-    justify-content: center;
-}
-
-#updateData:hover {
-    cursor: pointer;
-    color: hsl(0, 25%, 54%);
-    background-color: hsl(258, 87%, 83%);
-}
-
-.supaData {
-    height: 300px;
-    width: 100%;
-    border: 1px solid;
-    margin: 5px 10px;
-    border-radius: 5px;
-}
-
-
 
 .footer {
     background-color: aquamarine;

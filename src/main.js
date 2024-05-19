@@ -24,12 +24,6 @@ async function fnLogin() {
             document.cookie = "userName=" + userName;
         }
     }
-
-    if (login) {
-        mainContainer.style.display = "flex";
-    } else {
-        alert("Incorrect user key!!!")
-    }
 }
 
 function fnLogout() {
