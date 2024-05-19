@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./icon.svg">
+    <title>mySupabaseApp</title>
+    <link rel="stylesheet" href="./main.css">
+    <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <p class="logo"><a href="./index.html">Shift Tracker</a></p>
+            <div class="log">
+                <input type="text" placeholder="Enter Username" id="username">
+                <input type="password" placeholder="Enter Password" id="password">
+                <button class="btnlog" onclick="fnLogin()">Login</button>
+                <button class="btnlog" onclick="fnLogout()">Logout</button>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <div class="maincontainer" id="maincontainer">
+            <div class="addItem" id="addItem">
+                <input type="datetime-local" name="start_time" id="start_time">
+                <input type="datetime-local" name="end_time" id="end_time">
+                <button type="button" onclick="addSupabaseItem()">Add Shift</button>
+                <div class="addItemResult" id="addItemResult"></div>
+            </div>
+            <button type="button" class="getData" onclick="displayGrid()" id="getData">Get Data</button>
+            <button type="button" class="updateData" onclick="updateGrid()" id="updateData">Update Data</button>
+            <div class="supaData" id="myGrid"></div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footcontainer">
+            <div id="version"> v0.0.1</div>
+            <div id="team">© Shift Tracker </div>
+            <div id="user"> 👩‍💻 Username</div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
