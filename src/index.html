@@ -23,11 +23,11 @@
             <div class="addItem" id="addItem">
                 <input type="datetime-local" name="start_time" id="start_time">
                 <input type="datetime-local" name="end_time" id="end_time">
-                <input type="text" name="key" id="key" placeholder="Enter key">
-                <button type="button" onclick="addSupabaseItem()">Add Shift</button>                
+                <input type="password" name="key" id="key" placeholder="Enter key">
+                <button type="button" onclick="addSupabaseItem()">Add Shift</button>
                 <div class="addItemResult" id="addItemResult"></div>
+                <button type="button" class="getData" onclick="displayGrid()" id="getData">Get Data</button>
             </div>
-            <button type="button" class="getData" onclick="displayGrid()" id="getData">Get Data</button>            
             <div class="supaData" id="myGrid"></div>
         </div>
 

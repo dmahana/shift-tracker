@@ -77,22 +77,20 @@ const getDataBtn = document.getElementById("getData");
 const updateDataBtn = document.getElementById("updateData");
 
 async function displayGrid() {
-    let gridData = await getSupabaseData();
-    new gridjs.Grid({
-        columns: gridColumns,
-        pagination: {
-            limit: 10
-        },
-        data: gridData,
-    }).render(myGridElement);
-}
+    const validKeys = await getValidKeys();
+    let keyElement = document.getElementById("key");
+    let addItemResultElement = document.getElementById("addItemResult");
 
-async function updateGrid() {
-    myGridElement.innerHTML = null;
-    let newData = await getSupabaseData();
-    new gridjs.Grid({
-        columns: gridColumns,
-        data: newData,
-    }).render(myGridElement);
+    if (!validKeys.includes(keyElement.value)) {
+        addItemResultElement.innerText = "Invalid Key!!!!";
+    } else {
+        let gridData = await getSupabaseData();
+        new gridjs.Grid({
+            columns: gridColumns,
+            pagination: {
+                limit: 10
+            },
+            data: gridData,
+        }).render(myGridElement);
+    }
 }
-

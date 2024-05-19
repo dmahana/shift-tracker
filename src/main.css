@@ -65,11 +65,11 @@ main {
     flex-direction: column;
 }
 
-.addItem {
-    background-color: beige;
+.addItem {    
     width: 95%;
     margin: 2% 2%;
-    float: right;
+    display: flex;
+    justify-content: space-around;
 }
 
 .addItem input {
