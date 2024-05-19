@@ -82,6 +82,7 @@ main {
     padding: 1em 1em;
     background-color: hsla(120, 93%, 44%, 0.836);
     border-radius: 5px;
+    margin: 4% 4%;
 }
 
 #getData {
